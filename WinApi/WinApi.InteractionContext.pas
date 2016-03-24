@@ -512,28 +512,31 @@ function SetPivotInteractionContext(
 
 implementation
 
-function CreateInteractionContext; external user32 name 'CreateInteractionContext' {$IFDEF SUPPORTS_DELAYED}delayed{$ENDIF};
-function DestroyInteractionContext; external user32 name 'DestroyInteractionContext' {$IFDEF SUPPORTS_DELAYED}delayed{$ENDIF};
-function RegisterOutputCallbackInteractionContext; external user32 name 'RegisterOutputCallbackInteractionContext' {$IFDEF SUPPORTS_DELAYED}delayed{$ENDIF};
-function SetInteractionConfigurationInteractionContext; external user32 name 'SetInteractionConfigurationInteractionContext' {$IFDEF SUPPORTS_DELAYED}delayed{$ENDIF};
-function GetInteractionConfigurationInteractionContext; external user32 name 'GetInteractionConfigurationInteractionContext' {$IFDEF SUPPORTS_DELAYED}delayed{$ENDIF};
-function SetPropertyInteractionContext; external user32 name 'SetPropertyInteractionContext' {$IFDEF SUPPORTS_DELAYED}delayed{$ENDIF};
-function GetPropertyInteractionContext; external user32 name 'GetPropertyInteractionContext' {$IFDEF SUPPORTS_DELAYED}delayed{$ENDIF};
-function SetInertiaParameterInteractionContext; external user32 name 'SetInertiaParameterInteractionContext' {$IFDEF SUPPORTS_DELAYED}delayed{$ENDIF};
-function GetInertiaParameterInteractionContext; external user32 name 'GetInertiaParameterInteractionContext' {$IFDEF SUPPORTS_DELAYED}delayed{$ENDIF};
-function SetCrossSlideParametersInteractionContext; external user32 name 'SetCrossSlideParametersInteractionContext' {$IFDEF SUPPORTS_DELAYED}delayed{$ENDIF};
-function GetCrossSlideParameterInteractionContext; external user32 name 'GetCrossSlideParameterInteractionContext' {$IFDEF SUPPORTS_DELAYED}delayed{$ENDIF};
-function SetMouseWheelParameterInteractionContext; external user32 name 'SetMouseWheelParameterInteractionContext' {$IFDEF SUPPORTS_DELAYED}delayed{$ENDIF};
-function GetMouseWheelParameterInteractionContext; external user32 name 'GetMouseWheelParameterInteractionContext' {$IFDEF SUPPORTS_DELAYED}delayed{$ENDIF};
-function ResetInteractionContext; external user32 name 'ResetInteractionContext' {$IFDEF SUPPORTS_DELAYED}delayed{$ENDIF};
-function GetStateInteractionContext; external user32 name 'GetStateInteractionContext' {$IFDEF SUPPORTS_DELAYED}delayed{$ENDIF};
-function AddPointerInteractionContext; external user32 name 'AddPointerInteractionContext' {$IFDEF SUPPORTS_DELAYED}delayed{$ENDIF};
-function RemovePointerInteractionContext; external user32 name 'RemovePointerInteractionContext' {$IFDEF SUPPORTS_DELAYED}delayed{$ENDIF};
-function ProcessPointerFramesInteractionContext; external user32 name 'ProcessPointerFramesInteractionContext' {$IFDEF SUPPORTS_DELAYED}delayed{$ENDIF};
-function BufferPointerPacketsInteractionContext; external user32 name 'BufferPointerPacketsInteractionContext' {$IFDEF SUPPORTS_DELAYED}delayed{$ENDIF};
-function ProcessBufferedPacketsInteractionContext; external user32 name 'ProcessBufferedPacketsInteractionContext' {$IFDEF SUPPORTS_DELAYED}delayed{$ENDIF};
-function ProcessInertiaInteractionContext; external user32 name 'ProcessInertiaInteractionContext' {$IFDEF SUPPORTS_DELAYED}delayed{$ENDIF};
-function StopInteractionContext; external user32 name 'StopInteractionContext' {$IFDEF SUPPORTS_DELAYED}delayed{$ENDIF};
-function SetPivotInteractionContext; external user32 name 'SetPivotInteractionContext' {$IFDEF SUPPORTS_DELAYED}delayed{$ENDIF};
+const
+  ninput = 'ninput.dll';
+
+function CreateInteractionContext; external ninput name 'CreateInteractionContext' {$IFDEF SUPPORTS_DELAYED}delayed{$ENDIF};
+function DestroyInteractionContext; external ninput name 'DestroyInteractionContext' {$IFDEF SUPPORTS_DELAYED}delayed{$ENDIF};
+function RegisterOutputCallbackInteractionContext; external ninput name 'RegisterOutputCallbackInteractionContext' {$IFDEF SUPPORTS_DELAYED}delayed{$ENDIF};
+function SetInteractionConfigurationInteractionContext; external ninput name 'SetInteractionConfigurationInteractionContext' {$IFDEF SUPPORTS_DELAYED}delayed{$ENDIF};
+function GetInteractionConfigurationInteractionContext; external ninput name 'GetInteractionConfigurationInteractionContext' {$IFDEF SUPPORTS_DELAYED}delayed{$ENDIF};
+function SetPropertyInteractionContext; external ninput name 'SetPropertyInteractionContext' {$IFDEF SUPPORTS_DELAYED}delayed{$ENDIF};
+function GetPropertyInteractionContext; external ninput name 'GetPropertyInteractionContext' {$IFDEF SUPPORTS_DELAYED}delayed{$ENDIF};
+function SetInertiaParameterInteractionContext; external ninput name 'SetInertiaParameterInteractionContext' {$IFDEF SUPPORTS_DELAYED}delayed{$ENDIF};
+function GetInertiaParameterInteractionContext; external ninput name 'GetInertiaParameterInteractionContext' {$IFDEF SUPPORTS_DELAYED}delayed{$ENDIF};
+function SetCrossSlideParametersInteractionContext; external ninput name 'SetCrossSlideParametersInteractionContext' {$IFDEF SUPPORTS_DELAYED}delayed{$ENDIF};
+function GetCrossSlideParameterInteractionContext; external ninput name 'GetCrossSlideParameterInteractionContext' {$IFDEF SUPPORTS_DELAYED}delayed{$ENDIF};
+function SetMouseWheelParameterInteractionContext; external ninput name 'SetMouseWheelParameterInteractionContext' {$IFDEF SUPPORTS_DELAYED}delayed{$ENDIF};
+function GetMouseWheelParameterInteractionContext; external ninput name 'GetMouseWheelParameterInteractionContext' {$IFDEF SUPPORTS_DELAYED}delayed{$ENDIF};
+function ResetInteractionContext; external ninput name 'ResetInteractionContext' {$IFDEF SUPPORTS_DELAYED}delayed{$ENDIF};
+function GetStateInteractionContext; external ninput name 'GetStateInteractionContext' {$IFDEF SUPPORTS_DELAYED}delayed{$ENDIF};
+function AddPointerInteractionContext; external ninput name 'AddPointerInteractionContext' {$IFDEF SUPPORTS_DELAYED}delayed{$ENDIF};
+function RemovePointerInteractionContext; external ninput name 'RemovePointerInteractionContext' {$IFDEF SUPPORTS_DELAYED}delayed{$ENDIF};
+function ProcessPointerFramesInteractionContext; external ninput name 'ProcessPointerFramesInteractionContext' {$IFDEF SUPPORTS_DELAYED}delayed{$ENDIF};
+function BufferPointerPacketsInteractionContext; external ninput name 'BufferPointerPacketsInteractionContext' {$IFDEF SUPPORTS_DELAYED}delayed{$ENDIF};
+function ProcessBufferedPacketsInteractionContext; external ninput name 'ProcessBufferedPacketsInteractionContext' {$IFDEF SUPPORTS_DELAYED}delayed{$ENDIF};
+function ProcessInertiaInteractionContext; external ninput name 'ProcessInertiaInteractionContext' {$IFDEF SUPPORTS_DELAYED}delayed{$ENDIF};
+function StopInteractionContext; external ninput name 'StopInteractionContext' {$IFDEF SUPPORTS_DELAYED}delayed{$ENDIF};
+function SetPivotInteractionContext; external ninput name 'SetPivotInteractionContext' {$IFDEF SUPPORTS_DELAYED}delayed{$ENDIF};
 
 end.
